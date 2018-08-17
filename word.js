@@ -40,8 +40,10 @@ this.checkLetter = function(guessLet) {
 
 this.wordRender = function() {
     var string = '';
+    var renderLetters = [];
     for (var i=0; i < this.lets.length; i++){
         string += this.lets[i].letterRender();
+        this.lets[i].letterRender.push.join();
     }
     return string;
 };

@@ -9,7 +9,7 @@ console.log("-----------------------------");
 prompt.start();
 
 game = {
-    wordBank: ['batman', 'superman', 'wonder woman', 'flash', 'green latern', 'cyborg', 'aquaman'],
+    wordBank: ['batman', 'superman', 'wonder woman', 'flash', 'green lantern', 'cyborg', 'aquaman'],
     wordsWon: 0,
     guessesRemaining: 10,
     currentWrd: null,
@@ -39,6 +39,7 @@ game = {
                 console.log("CORRECT");
                     if(self.currentWrd.findWord()){
                         console.log("You won!");
+                        console.log("Game over. Correct Word ", self.currentWrd.target);
                         console.log("-------------------");
                         return;
                     }

@@ -1,9 +1,9 @@
-var letter = function() {
+var Letter = function(let) {
 
-    this.character = let;
+    this.charac = let;
     this.appear = false;
     this.letterRender = function() {
-        return !(this.appear) ? "_" : this.character;
+        return !(this.appear) ? "_" : this.charac;
     };
 
 };  
